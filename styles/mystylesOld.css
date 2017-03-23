@@ -1,0 +1,96 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.main{
+    position: relative;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+.searchDiv{
+    height: 25px;
+}
+input[type=text]{
+    height: 100%;
+    border: 1px solid rgba(0,0,0,0.2);
+    border-radius: 3px;
+    padding-left: 1%;
+}
+button{
+    background-color: blue;
+    border: none;
+    color: white;
+    height: 100%;
+    border-radius: 3px;
+    box-sizing: content-box;
+    padding-left: 1%;
+    padding-right: 1%;   
+}
+hr{
+    position: relative;
+    margin-top:2.5%;
+    margin-bottom: 2%;
+    border-color: rgba(0,0,0,0.1);  
+}
+hr~span{
+    float: left;
+    margin-bottom: 4%;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding-right: 15px;
+    text-decoration: none;
+}
+.userDetails{
+    clear: left;
+}
+.card{
+    margin-right: 10px;
+}
+.delete{
+    position: absolute;
+    right: -6px;
+    top:5px;
+}
+div.img {
+    position: relative;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    float: left;
+    width: 200px;
+    padding-bottom: 10px;
+    box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.3);
+}
+
+div.img:hover {
+    border: 1px solid #777;
+}
+
+div.img img {
+    width: 105%;
+    height: auto;
+    margin: 2%;
+}
+
+.name,.location,.followers {
+    margin-top: 5px;
+    margin-left: 10px;
+    text-align: left;
+}

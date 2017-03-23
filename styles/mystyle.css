@@ -1,0 +1,138 @@
+body {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 0;
+  margin-left: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-right: 0;
+  padding-left: 0;
+  font-family: sans-serif;
+}
+.main {
+  position: relative;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-right: 10%;
+  padding-left: 10%;
+}
+.searchDiv {
+  width: auto;
+  height: 25px;
+}
+input[type=text] {
+  width: auto;
+  height: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-right: 0;
+  padding-left: 1%;
+}
+button {
+  background-color: blue;
+  border: none;
+  color: #ffffff;
+  width: auto;
+  height: 100%;
+  border-radius: 3px;
+  box-sizing: content-box;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-right: 1%;
+  padding-left: 1%;
+}
+hr {
+  position: relative;
+  margin-top: 2.5%;
+  margin-bottom: 2%;
+  margin-right: 0;
+  margin-left: 0;
+  border-color: rgba(0, 0, 0, 0.1);
+}
+hr ~ span {
+  float: left;
+  margin-top: 0;
+  margin-bottom: 4%;
+  margin-right: 0;
+  margin-left: 0;
+}
+ul {
+  list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 0;
+  margin-left: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-right: 0;
+  padding-left: 0;
+  overflow: hidden;
+}
+ul li {
+  float: left;
+}
+ul li a {
+  display: block;
+  color: #000000;
+  text-align: center;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-right: 15px;
+  padding-left: 0;
+  text-decoration: none;
+}
+.userDetails {
+  clear: left;
+}
+.card {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 10px;
+  margin-left: 0;
+}
+.delete {
+  position: absolute;
+  right: -6px;
+  top: 5px;
+}
+div.img {
+  position: relative;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-right: 5px;
+  margin-left: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  float: left;
+  overflow-Y: auto;
+  overflow-x: hidden;
+  width: 200px;
+  height: 280px;
+  padding-top: 0;
+  padding-bottom: 10px;
+  padding-right: 0;
+  padding-left: 0;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+div.img img {
+  width: 105%;
+  height: auto;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  margin-right: 2%;
+  margin-left: 2%;
+}
+div.img:hover {
+  border: 1px solid #777;
+}
+.name,
+.location,
+.followers {
+  margin-top: 5px;
+  margin-bottom: 0;
+  margin-right: 0;
+  margin-left: 10px;
+  text-align: left;
+}

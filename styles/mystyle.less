@@ -1,0 +1,126 @@
+@black: #000000;
+@lightGrey: rgba(0,0,0,0.1);
+@blue: blue;
+@white: #ffffff;
+@mediumGrey: rgba(0,0,0,0.2);
+@grey: #ccc;
+@blackWithOpacity: rgba(0,0,0,0.3);
+@deepGray: #777;
+
+.set-margin (@margin-top:0px,@margin-right:0px,@margin-bottom: 0px, @margin-left: 0px) {
+	margin-top:@margin-top;
+	margin-bottom:@margin-bottom;
+	margin-right:@margin-right;
+	margin-left:@margin-left;
+}
+
+.set-padding(@padding-top: 0px,@padding-right: 0px,@padding-bottom: 0px, @padding-left: 0px){
+	padding-top:@padding-top;
+	padding-bottom:@padding-bottom;
+	padding-right:@padding-right;
+	padding-left:@padding-left;
+}
+
+.set-wdth-ht(@wdth: 0px,@ht: 0px){
+	width:@wdth;
+	height:@ht;
+}
+
+.set-display(@value){
+    display: @value;
+}
+
+.set-position(@value){
+    position: @value;
+}
+
+body{
+    .set-margin(0,0,0,0);
+    .set-padding(0,0,0,0);
+    font-family: sans-serif;
+}
+.main{
+	.set-position(relative);
+	.set-padding(2%,10%,2%,10%);
+}
+.searchDiv{
+	.set-wdth-ht(auto,25px);
+}
+input[type=text]{
+	.set-wdth-ht(auto,100%);
+    border: 1px solid @mediumGrey;
+    border-radius: 3px;
+	.set-padding(0,0,0,1%);
+}
+button{
+    background-color: @blue;
+    border: none;
+    color: @white;
+	.set-wdth-ht(auto,100%);
+    border-radius: 3px;
+    box-sizing: content-box;
+	.set-padding(0,1%,0,1%);
+}
+hr{
+	.set-position(relative);
+	.set-margin(2.5%,0,2%,0);
+    border-color: @lightGrey;  
+}
+hr~span{
+    float: left;
+	.set-margin(0,0,4%,0);
+}
+ul {
+    list-style-type: none;
+	.set-margin(0,0,0,0);
+	.set-padding(0,0,0,0);
+    overflow: hidden;
+		li {
+		float: left;
+			a {
+			.set-display(block);
+			color: @black;
+			text-align: center;
+			.set-padding(0,15px,0,0);
+			text-decoration: none;
+		}
+	}
+}
+
+.userDetails{
+    clear: left;
+}
+.card{
+	.set-margin(0,10px,0,0);
+}
+.delete{
+    .set-position(absolute);
+    right: -6px;
+    top:5px;
+}
+div.img {
+	.set-position(relative);
+    .set-margin(5px,5px,5px,5px);
+    border: 1px solid @grey;
+    border-radius: 3px;
+    float: left;
+    overflow-Y: auto;
+    overflow-x: hidden;
+	.set-wdth-ht(200px,280px);
+	.set-padding(0,0,10px,0);
+    box-shadow: 1px 1px 1px 1px @blackWithOpacity;
+		img {
+		.set-wdth-ht(105%,auto);
+		.set-margin(2%,2%,2%,2%);
+	}
+}
+
+div.img:hover {
+    border: 1px solid @deepGray;
+}
+
+
+.name,.location,.followers {
+	.set-margin(5px,0,0,10px);
+    text-align: left;
+}

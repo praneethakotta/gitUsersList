@@ -1,0 +1,38 @@
+
+    <div class="main" ng-controller="listController"> 
+        <div class="searchDiv">
+            <input type="text" ng-model="userName" placeholder="github login">
+            <button type="button" ng-click="checkUser(userName)">Add</button>
+        </div>
+        <hr>
+        <span>Sort by:</span> 
+        <ul>
+           <li><a href="#" ng-click="select(val1)">Name
+                <span ng-show="upArrow1">&uarr;</span>
+                <span ng-show="downArrow1">&darr;</span></a>
+            </li>
+          <li><a href="#" ng-click="select(val2)">Location
+              <span ng-show="upArrow2">&uarr;</span>
+              <span ng-show="downArrow2">&darr;</span></a>
+            </li>
+          <li><a href="#" ng-click="select(val3)">Followers
+              <span ng-show="upArrow3">&uarr;</span>
+              <span ng-show="downArrow3">&darr;</span></a>
+            </li>
+        </ul>
+        
+        <ul class="userDetails">
+            <li class="card" ng-repeat="user in usersDetails | orderBy:filtText">
+                <div class="img">
+                  <a target="_blank" href="https://github.com/{{user.login}}">
+                    <img ng-src={{user.avatar_url}} alt="crackImg" width="300px" height="200px" >
+                  </a>
+                  <div class="name">Name : {{user.name}}</div>
+                  <div class="location">Location : {{user.location}}</div>
+                  <div class="followers">Followers : {{user.followers}}</div>
+                  <a class="delete" ng-click="deleteUser(user.id)" href="#">&times;</a>
+                </div>             
+            </li>
+        </ul>
+    </div>
+    
